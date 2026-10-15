@@ -1,0 +1,4 @@
+model,experiment,params,accuracy,macro_f1,weighted_f1,fit_seconds
+ridge_baseline_model,baseline,default,0.918589,0.918712,0.918586,0.682
+mlp_model,tuned_best,"{""activation"": ""relu"", ""alpha"": 0.0001, ""hidden_layer_sizes"": [100], ""max_iter"": 300}",0.91791,0.918395,0.918233,61.445
+logistic_regression_model,tuned_best,"{""C"": 100.0, ""max_iter"": 2000}",0.915875,0.916166,0.916032,1.515

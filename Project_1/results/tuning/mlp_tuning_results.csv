@@ -1,0 +1,5 @@
+model_module,model_name,run_index,params,random_state,train_samples,valid_samples,vocabulary_size,fit_seconds,accuracy,macro_f1,weighted_f1,tfidf_config
+mlp_model,MLPClassifier,2,"{""activation"": ""relu"", ""alpha"": 0.0001, ""hidden_layer_sizes"": [100], ""max_iter"": 300}",42,5894,1474,5000,61.445,0.91791,0.918395,0.918233,"{""max_features"": 5000}"
+mlp_model,MLPClassifier,1,"{""activation"": ""relu"", ""alpha"": 0.0001, ""hidden_layer_sizes"": [50], ""max_iter"": 300}",42,5894,1474,5000,30.018,0.912483,0.913068,0.912949,"{""max_features"": 5000}"
+mlp_model,MLPClassifier,4,"{""activation"": ""relu"", ""alpha"": 0.0001, ""hidden_layer_sizes"": [100, 50], ""max_iter"": 300}",42,5894,1474,5000,29.422,0.906377,0.907057,0.906869,"{""max_features"": 5000}"
+mlp_model,MLPClassifier,3,"{""activation"": ""relu"", ""alpha"": 0.0001, ""hidden_layer_sizes"": [200], ""max_iter"": 300}",42,5894,1474,5000,39.687,0.90095,0.901733,0.901593,"{""max_features"": 5000}"
