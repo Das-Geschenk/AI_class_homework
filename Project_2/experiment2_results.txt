@@ -1,0 +1,25 @@
+迷宫 A* [h=0]: path=[(0, 0), (0, 1), (0, 2), (1, 2), (1, 3), (1, 4), (2, 4), (3, 4)], length=7, expanded=17, time=0.325ms
+迷宫 A* [曼哈顿]: path=[(0, 0), (0, 1), (0, 2), (1, 2), (1, 3), (1, 4), (2, 4), (3, 4)], length=7, expanded=14, time=0.198ms
+加权地形 A* [h=0]: path=[(0, 0), (1, 0), (2, 0), (3, 0), (3, 1), (3, 2), (4, 2), (4, 3), (4, 4)], cost=7, expanded=15, time=0.268ms
+加权地形 A* [加权曼哈顿]: path=[(0, 0), (1, 0), (2, 0), (3, 0), (3, 1), (3, 2), (4, 2), (4, 3), (4, 4)], cost=7, expanded=11, time=0.201ms
+博弈树 [从左到右] Minimax: value=5, leaves=8, pruned=0, time=0.059ms
+博弈树 [从左到右] Alpha-Beta: value=5, leaves=7, pruned=1, time=0.090ms
+博弈树 [反向访问] Minimax: value=5, leaves=8, pruned=0, time=0.034ms
+博弈树 [反向访问] Alpha-Beta: value=5, leaves=7, pruned=1, time=0.049ms
+
+宝藏位置最小代价矩阵（行/列顺序：A, B, T1, T2, T3, T4):
+        A    B   T1   T2   T3   T4
+   A    0   12   10    4    8    8
+   B   12    0    8    8    4   10
+  T1   10    8    0    6    6   12
+  T2    4    8    6    0    6    6
+  T3    8    4    6    6    0    6
+  T4    8   10   12    6    6    0
+H=2
+  Minimax: best_target=T2, best_value=-1, nodes=17, leaves=12, pruned=0, time=0.385ms
+  Alpha-Beta: best_target=T2, best_value=-1, nodes=13, leaves=8, pruned=4, time=0.201ms
+  Alpha-Beta（估值排序）: best_target=T2, best_value=-1, nodes=16, leaves=11, pruned=1, time=0.252ms
+H=4
+  Minimax: best_target=T3, best_value=3, nodes=65, leaves=24, pruned=0, time=0.828ms
+  Alpha-Beta: best_target=T3, best_value=3, nodes=47, leaves=16, pruned=6, time=0.648ms
+  Alpha-Beta（估值排序）: best_target=T3, best_value=3, nodes=50, leaves=18, pruned=3, time=0.744ms
